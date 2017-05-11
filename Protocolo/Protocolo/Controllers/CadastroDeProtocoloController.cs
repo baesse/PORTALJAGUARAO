@@ -14,7 +14,7 @@ namespace Protocolo.Controllers
             return View();
         }
 
-        public void InseriProtocolo(FormCollection protocolo)
+        public ActionResult InseriProtocolo(FormCollection protocolo)
         {
 
 
@@ -46,7 +46,8 @@ namespace Protocolo.Controllers
             };
 
             Models.Protocolo.InserirProtocolo(PROTOCOLO);
-            
+            return View("CADASTRAR");
+
 
         }
     }

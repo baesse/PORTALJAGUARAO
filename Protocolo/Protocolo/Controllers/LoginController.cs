@@ -15,7 +15,7 @@ namespace Protocolo.Controllers
         }
 
 
-        public ActionResult Logar(FormCollection usuario)
+        public void Logar(FormCollection usuario)
         {
             string user = usuario["usuario"];
 
@@ -24,11 +24,13 @@ namespace Protocolo.Controllers
             string result=Models.Usuario.Logar(user, senha);
 
             if(result!= "Usario não encotrado") {
-                return View("CadastrodeProtocolo/cadastrar");
+
+                Response.Redirect(@"~\CadastroDeProtocolo/Cadastrar");
+
 
             }else
             {
-                return View("CadastrodeProtocolo/cadastrar");
+               
             }
           
 
