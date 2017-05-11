@@ -8,12 +8,12 @@ namespace Protocolo.Models
 {
     public  class Protocolo
     {
-        public int protocolo { get; set; }
+        public string protocolo { get; set; }
         public string ano { get; set; }
         public String sedex { get; set; }
         public int idvalor { get; set; }
 
-        public Protocolo(int protocolo,string ano,String sedex,int idvalor)
+        public Protocolo(string protocolo,string ano,String sedex,int idvalor)
         {
             this.protocolo = protocolo;
             this.ano = ano;
@@ -54,7 +54,6 @@ namespace Protocolo.Models
             SqlDataReader reader = Models.Banco.GetReader(comando);
             while (reader.Read())
             {
-                Protocolo Protocoloconsulta = new Protocolo(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetInt32(3));
                 Conexao.Close();
                 return true;
             }

@@ -24,14 +24,17 @@ namespace Protocolo.Controllers
             string result=Models.Usuario.Logar(user, senha);
 
             if(result!= "Usario não encotrado") {
-                return View("Index/Index");
+                return View("CadastrodeProtocolo/cadastrar");
 
             }else
             {
-                return View("Login");
+                return View("CadastrodeProtocolo/cadastrar");
             }
           
 
         }
+
+
+       
     }
 }

@@ -41,7 +41,7 @@ namespace Protocolo.Controllers
 
             Models.Protocolo PROTOCOLO = new Models.Protocolo() {
 
-                protocolo = Convert.ToInt32(pt),
+                protocolo = pt,
                 ano =ano.Replace("/",""),
             };
 

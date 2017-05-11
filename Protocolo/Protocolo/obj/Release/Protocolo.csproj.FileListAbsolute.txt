@@ -160,3 +160,4 @@ C:\Users\administrador\Source\Repos\PORTALJAGUARAO\Protocolo\Protocolo\bin\Micro
 C:\Users\administrador\Source\Repos\PORTALJAGUARAO\Protocolo\Protocolo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\administrador\Source\Repos\PORTALJAGUARAO\Protocolo\Protocolo\obj\Release\Protocolo.dll
 C:\Users\administrador\Source\Repos\PORTALJAGUARAO\Protocolo\Protocolo\obj\Release\Protocolo.pdb
+C:\Users\administrador\Source\Repos\PORTALJAGUARAO\Protocolo\Protocolo\obj\Release\Protocolo.csprojResolveAssemblyReference.cache
