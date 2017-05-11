@@ -67,8 +67,8 @@
 
         <!-- Jumbotron Header -->
         <header class="jumbotron hero-spacer">
-            <h1>Portal Jaguarão</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+            <h1>Consultas Jaguarão</h1>
+            <p></p>
            
         </header>
 
@@ -76,20 +76,40 @@
 
         <!-- Title -->
         <div class="row">
-            <div class="col-lg-12">
-                <h3>Consulta de protocolo:</h3>              
-            </div>           
-        </div>
-        <div>
-           @using (Html.BeginForm("Index","Index",FormMethod.Get))
-           {
-            <input type="text" class="form-control" />
-            <p>
-                <input type="submit" value="Consultar" class="form-control" />
-            </p>
 
-           }
+
+            <div class="col-md-4">
+                <h3>Consulta de protocolo:</h3>              
+                     
+        
+            @using (Html.BeginForm("ConsultarProtocolo", "Index", FormMethod.Post))
+            {
+                <input type="text" placeholder="Exemplo:1/2017" name="protocolo" class="form-control" />
+                <p>
+                    <input type="submit" value="Consultar:" class="form-control" />
+                    <label class="col-md-8">@ViewBag.messagem</label>
+                </p>
+
+            }         
+          </div>
+                
+            <div class="col-md-4">
+                
+                <h3>Consulta valores:</h3>
+                @using (Html.BeginForm("ConsultarValores","Index",FormMethod.Post))
+            {
+                    <input type="text" placeholder="Digite a quantidade:" name="quantidade" class="form-control" />
+                    <p >
+                        <input type="submit" value="Consultar:" class="form-control" />
+                        <label class="col-md-8" >VALOR Total: R$ @ViewBag.Valor</label>
+                    </p>
+
+                }
+            </div>
         </div>
+
+       
+       
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
