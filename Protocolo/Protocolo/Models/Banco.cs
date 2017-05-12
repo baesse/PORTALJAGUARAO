@@ -10,7 +10,7 @@ namespace Protocolo.Models
     {
         public static SqlConnection GetConexao()
         {
-            SqlConnection Conexao = new SqlConnection("Server=tcp:cartoriojaguarao.database.windows.net,1433;Initial Catalog=BDCARTORIO;Persist Security Info=False;User ID=rootacesso;Password=75395146@carbono;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            SqlConnection Conexao = new SqlConnection("Server=tcp:cartoriojaguarao.database.windows.net,1433;Initial Catalog=BDCARTORIO;Persist Security Info=False;User ID=;Password=;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             try
             {
                 Conexao.Open();
