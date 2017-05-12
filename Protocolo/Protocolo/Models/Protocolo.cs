@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -8,7 +9,9 @@ namespace Protocolo.Models
 {
     public  class Protocolo
     {
+        [Required(ErrorMessage ="O numero do protocolo deve ser informado")]
         public string protocolo { get; set; }
+        [Required(ErrorMessage = "O ano do protocolo deve ser informado")]
         public string ano { get; set; }
         public String sedex { get; set; }
         public int idvalor { get; set; }

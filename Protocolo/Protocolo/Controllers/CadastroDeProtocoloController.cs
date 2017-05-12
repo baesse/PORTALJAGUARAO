@@ -11,7 +11,15 @@ namespace Protocolo.Controllers
         // GET: CadastroDeProtocolo
         public ActionResult Cadastrar()
         {
-            return View();
+
+
+              
+
+                return View();
+
+          
+
+            
         }
 
         public ActionResult InseriProtocolo(FormCollection protocolo)

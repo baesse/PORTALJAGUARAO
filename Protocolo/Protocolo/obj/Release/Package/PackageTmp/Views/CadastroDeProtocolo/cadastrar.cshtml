@@ -3,25 +3,27 @@
     ViewBag.Title = "CadastroProtocolo";
 }
 
-<h2>CadastroProtocolo</h2>
+<h2>Cadastro Protocolo</h2>
 
 <body>
-    <div class="row">
 
+    <div class="row">
+        <div class="col-md-4"></div>
 
         <div class="col-md-4">
-            <h4>Consulta de protocolo:</h4>
+            <h4>Cadastro de protocolo:</h4>
 
 
             @using (Html.BeginForm("InseriProtocolo", "CadastroDeProtocolo", FormMethod.Post))
             {
                 <input type="text" placeholder="Exemplo:1/2017" name="protocolo" class="form-control" />
                 <p>
-                    <input type="submit" value="Consultar:" class="form-control" />
+                    <input type="submit" value="Salvar:" class="form-control" />
                     <label class="col-md-8">@ViewBag.messagem</label>
                 </p>
 
             }
-        </div>       
+        </div>   
+        <div class="col-md-4"></div>    
     </div>
 </body>

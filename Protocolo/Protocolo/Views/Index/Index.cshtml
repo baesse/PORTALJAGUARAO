@@ -1,4 +1,6 @@
-﻿@{
+﻿
+
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -18,6 +20,7 @@
 
     <!-- Custom CSS -->
     <link href="css/heroic-features.css" rel="stylesheet">
+    <script type="text/javascript" src="~/Content/validaprotocolo.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -76,16 +79,22 @@
                 <h4>Consulta de protocolo:</h4>              
                      
         
-            @using (Html.BeginForm("ConsultarProtocolo", "Index", FormMethod.Post))
+            @using (Html.BeginForm("ConsultarProtocolo", "Index", FormMethod.Post, new { id="form" ,name = "form" }))
             {
-                <input type="text" placeholder="Exemplo:1/2017" name="protocolo" class="form-control" />
-                <p>
-                    <input type="submit" value="Consultar:" class="form-control" />
-                    <label class="col-md-8">@ViewBag.messagem</label>
-                </p>
+                <form onsubmit="return validacao()">
+                    <input type="text" placeholder="Exemplo:1/2017" id="protocolo" name="protocolo" class="form-control" />
+                    <p>
+                        <input type="submit" value="Consultar:" class="form-control"  onclick="return validacao()"/>
+                        <h1>
 
+                            <label class="col-md-8">@ViewBag.messagem</label>
+                        </h1>
+                    </p>
+                </form>
             }         
           </div>
+
+           
                 
             <div class="col-md-4">
                 

@@ -230,6 +230,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\validaprotocolo.js" />
     <None Include="Properties\PublishProfiles\PORTALJAGUARAO - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\PORTALJAGUARAO - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />

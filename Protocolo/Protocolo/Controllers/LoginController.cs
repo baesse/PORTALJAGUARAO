@@ -25,10 +25,15 @@ namespace Protocolo.Controllers
 
             if(result!= "Usario não encotrado") {
 
-                Response.Redirect(@"~\CadastroDeProtocolo/Cadastrar");
+                ViewBag.usuario = "Valido";
+
+                
+                // Response.Redirect(@"~\CadastroDeProtocolo/Cadastrar");
+                 Response.Redirect(@"~\CadastroDeProtocolo\Cadastrar");
 
 
-            }else
+            }
+            else
             {
                
             }
